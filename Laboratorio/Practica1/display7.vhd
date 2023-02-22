@@ -23,9 +23,9 @@ architecture arq of display is
   
     if rising_edge( clk ) then
       if contador = 50000000 - 1 then   
-        contador <= (others => '0');
+        contador <= ( others => '0' );
         if digito = 3 then
-          digito <= (others => '0');
+          digito <= ( others => '0' );
         else
           digito <= digito + 1;
         end if;
